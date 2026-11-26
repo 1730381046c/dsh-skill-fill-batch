@@ -1,0 +1,36 @@
+{
+  "name": "@local/dsh-skill-fill-batch",
+  "version": "1.0.0",
+  "description": "Fill batch numbers (填批号) on the Liaoning drug procurement platform from an export table, hospital by hospital",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "dsh-skill",
+    "fill-batch",
+    "填批号",
+    "rpa"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "assets",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
