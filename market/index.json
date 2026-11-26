@@ -1,0 +1,78 @@
+{
+    "format":  1,
+    "title":  {
+                  "en":  "Fill batch numbers",
+                  "zh":  "填批号工具"
+              },
+    "description":  {
+                        "en":  "DSH bundles that fill batch numbers from ERP exports on procurement platforms.",
+                        "zh":  "按 ERP 导出表在招采平台上批量填写批号的 DSH 插件。"
+                    },
+    "metadata":  {
+                     "categories":  {
+                                        "workflow":  {
+                                                         "title":  {
+                                                                       "en":  "Workflow",
+                                                                       "zh":  "业务流程"
+                                                                   }
+                                                     }
+                                    },
+                     "labels":  {
+                                    "rpa":  {
+                                                "title":  {
+                                                              "en":  "UI automation",
+                                                              "zh":  "界面自动化"
+                                                          }
+                                            }
+                                },
+                     "sortKeys":  {
+
+                                  }
+                 },
+    "plugins":  [
+                    {
+                        "name":  "@local/dsh-skill-fill-batch",
+                        "title":  {
+                                      "en":  "Fill batch numbers",
+                                      "zh":  "填批号"
+                                  },
+                        "description":  {
+                                            "en":  "Adds the fill-batch-number skill: feed it an ERP export table and a list of hospitals to skip, and the agent fills 批号 hospital by hospital on the Liaoning drug procurement platform\u0027s 待发货 page, ticks the rows, and confirms shipment. Ships table-parsing and Windows UI helper scripts. Needs a logged-in 360 browser on the same machine; it only fills the 批号 column and never changes expiry dates or notes.",
+                                            "zh":  "提供 fill-batch-number 技能：给它一份 ERP 导出表和要跳过的医疗机构名单，它就会在辽宁招采平台的「待发货」页按医疗机构逐家填写批号、勾选并确认发货。附带表格解析脚本和 Windows 界面操作脚本。需要本机已登录的 360 浏览器；只填「批号」一列，不改有效期和备注。"
+                                        },
+                        "icon":  "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0IiBmaWxsPSJub25lIj4KICA8cmVjdCB4PSIxMCIgeT0iOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjUwIiByeD0iNiIgZmlsbD0iIzJGNkZFQiIvPgogIDxyZWN0IHg9IjEwIiB5PSI4IiB3aWR0aD0iNDQiIGhlaWdodD0iMTQiIHJ4PSI2IiBmaWxsPSIjMUQ0RkI4Ii8+CiAgPHJlY3QgeD0iMjIiIHk9IjQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxMCIgcng9IjMiIGZpbGw9IiNDOUQ4RkYiLz4KICA8cmVjdCB4PSIxOCIgeT0iMzAiIHdpZHRoPSIyOCIgaGVpZ2h0PSI0IiByeD0iMiIgZmlsbD0iI0RDRTdGRiIvPgogIDxyZWN0IHg9IjE4IiB5PSI0MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQiIHJ4PSIyIiBmaWxsPSIjRENFN0ZGIi8+CiAgPHBhdGggZD0iTTE4IDUwIEwyMyA1NSBMMzMgNDQiIHN0cm9rZT0iIzhCRTNCMCIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==",
+                        "author":  "1730381046c",
+                        "homepage":  "https://github.com/1730381046c/dsh-skill-fill-batch",
+                        "repository":  {
+                                           "url":  "https://github.com/1730381046c/dsh-skill-fill-batch"
+                                       },
+                        "metadata":  {
+                                         "category":  "workflow",
+                                         "keywords":  [
+                                                          "dsh-plugin",
+                                                          "dsh-skill",
+                                                          "fill-batch",
+                                                          "填批号",
+                                                          "rpa"
+                                                      ],
+                                         "labels":  [
+                                                        "rpa"
+                                                    ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "1.0.0",
+                                             "publishTimestamp":  1795705942,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/1730381046c/dsh-skill-fill-batch.git",
+                                                            "commit":  "7fc64e088f2b1a4069761562c9c6836df30f13de"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "\u003e=0.2.2-rc.5"
+                                                         }
+                                         }
+                                     ]
+                    }
+                ]
+}
