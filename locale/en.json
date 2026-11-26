@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Fill batch numbers",
+    "description": "Adds the fill-batch-number skill: feed it an ERP export table and a list of hospitals to skip, and the agent fills 批号 hospital by hospital on the Liaoning drug procurement platform's 待发货 page, ticks the rows, and confirms shipment. Ships table-parsing and Windows UI helper scripts. Needs a logged-in 360 browser on the same machine; it only fills the 批号 column and never changes expiry dates or notes."
+  }
+}
