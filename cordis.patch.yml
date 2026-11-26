@@ -1,0 +1,3 @@
+- insert:
+    - id: fill-batch
+      name: '@local/dsh-skill-fill-batch'
